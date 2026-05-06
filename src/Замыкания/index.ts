@@ -1,0 +1,1 @@
+export {closure} from './closure';
