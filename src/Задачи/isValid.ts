@@ -22,6 +22,8 @@ function isValid(str: string) {
 	return !stack.length;
 }
 
+// *** Проверка ***********************************************
+
 const samples = [
 	{
 		test: ['()[]{}'],
