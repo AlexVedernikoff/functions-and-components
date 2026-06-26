@@ -60,3 +60,5 @@ export const fetchWithAutoRetryTest = () => {
 		.then(data => console.log('Success:', data))
 		.catch(error => console.error('Error:', error));
 };
+
+// https://coderun.yandex.ru/selections/frontend-interview-2026/problems/fetch-with-retry/analyses/7790
