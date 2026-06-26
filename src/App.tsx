@@ -1,6 +1,6 @@
 import {RippleButtonsList} from './components';
-import {fetchAllTest} from './Асинхронность';
-import {canJumpTest, expire, isValidTest, mergeIntervalsTest} from './Задачи';
+import {fetchAllTest, fetchWithAutoRetryTest} from './Асинхронность';
+import {canJumpTest, expire, isValidTest, mergeIntervalsTest, optionalChainingTest} from './Задачи';
 
 const App = () => {
 	// closure(); // Замыкания
@@ -8,7 +8,12 @@ const App = () => {
 	// fetchAllTest(); // массив url
 	// canJumpTest();
 	// mergeIntervalsTest();
-	isValidTest();
+	// isValidTest();
+	// optionalChainingTest();
+	fetchWithAutoRetryTest();
+
+	// ***
+	// ***
 
 	return (
 		<>
