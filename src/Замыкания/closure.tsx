@@ -14,3 +14,33 @@ export const closure = () => {
 
 	wrapper();
 };
+
+// ************************************************************
+// *** Замыкание самый простой пример *************************
+
+function counter() {
+	let i = 0;
+	return function () {
+		return i++;
+	};
+}
+
+const count1 = counter();
+const count2 = counter();
+
+console.log('Счётчик 1');
+for (let i = 0; i < 4; i++) {
+	console.log(count1());
+}
+console.log('\nСчётчик 2');
+for (let i = 0; i < 4; i++) {
+	console.log(count2());
+}
+
+// Альтернативный вариант
+// function counter() {
+//   let count = 0;
+//   return (() => count++)
+// }
+
+// https://replit.com/@ChernayaLuna/Zamykaniie-samyi-prostoi-primier
