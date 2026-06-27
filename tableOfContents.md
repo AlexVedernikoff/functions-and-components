@@ -4,7 +4,7 @@
 
 # Рекурсия
 
-1. optionalChaining [optional Chaining](src\Задачи\optionalChaining.ts)
+2. optionalChaining [optional Chaining](src\Задачи\optionalChaining.ts)
 
 # Задача JavaScript
 
@@ -12,4 +12,8 @@
 
 # Паттерн "Стек"
 
-2. Скобки валидация [valid Parentheses](src\Задачи\isValid.ts)
+4. Скобки валидация [valid Parentheses](src\Задачи\isValid.ts)
+
+# Паттерн "Хэш таблица"
+
+5. cachingDecorator [caching Decorator](src\Задачи\cachingDecorator.js)
