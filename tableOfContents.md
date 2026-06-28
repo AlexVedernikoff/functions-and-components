@@ -16,4 +16,5 @@
 
 # Паттерн "Хэш таблица"
 
-5. cachingDecorator [caching Decorator](src\Задачи\cachingDecorator.js)
+5. twoSum [two Sum](src\Задачи\twoSum.ts)
+6. cachingDecorator [caching Decorator](src\Задачи\cachingDecorator.js)
