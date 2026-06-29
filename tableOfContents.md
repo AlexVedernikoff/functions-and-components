@@ -18,3 +18,9 @@
 
 5. twoSum [two Sum](src\Задачи\twoSum.ts)
 6. cachingDecorator [caching Decorator](src\Задачи\cachingDecorator.js)
+
+# Полифилы
+
+# Алгоритмы
+
+9. Бинарный поиск в отсортированном массиве [binary Search](src\Алгоритмы\бинарныйПоиск.ts)

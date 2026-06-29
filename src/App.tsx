@@ -1,4 +1,6 @@
 import {RippleButtonsList} from './components';
+import {findPathTest} from './test';
+import {binarySearchRecursiveTest} from './Алгоритмы';
 import {fetchAllTest, fetchWithAutoRetryTest} from './Асинхронность';
 import {canJumpTest, expire, isValidTest, mergeIntervalsTest, optionalChainingTest} from './Задачи';
 
@@ -10,7 +12,9 @@ const App = () => {
 	// mergeIntervalsTest();
 	// isValidTest();
 	// optionalChainingTest();
-	fetchWithAutoRetryTest();
+	// fetchWithAutoRetryTest();
+	// findPathTest();
+	binarySearchRecursiveTest();
 
 	// ***
 	// ***
