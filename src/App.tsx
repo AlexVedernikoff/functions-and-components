@@ -3,6 +3,7 @@ import {findPathTest} from './test';
 import {binarySearchRecursiveTest} from './Алгоритмы';
 import {fetchAllTest, fetchWithAutoRetryTest} from './Асинхронность';
 import {canJumpTest, expire, isValidTest, mergeIntervalsTest, optionalChainingTest} from './Задачи';
+import {flattenArrayTest} from './Рекурсия';
 
 const App = () => {
 	// closure(); // Замыкания
@@ -14,7 +15,8 @@ const App = () => {
 	// optionalChainingTest();
 	// fetchWithAutoRetryTest();
 	// findPathTest();
-	binarySearchRecursiveTest();
+	// binarySearchRecursiveTest();
+	flattenArrayTest();
 
 	// ***
 	// ***

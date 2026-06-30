@@ -4,7 +4,8 @@
 
 # Рекурсия
 
-2. optionalChaining [optional Chaining](src\Задачи\optionalChaining.ts)
+2. flattenArray [flatten Array](src\Рекурсия\flattenArray.js)
+3. optionalChaining [optional Chaining](src\Задачи\optionalChaining.ts)
 
 # Задача JavaScript
 
