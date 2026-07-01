@@ -1,8 +1,9 @@
 import {RippleButtonsList} from './components';
 import {findPathTest} from './test';
-import {binarySearchRecursiveTest} from './Алгоритмы';
+import {binarySearchRecursiveTest, breadthSearchTest} from './Алгоритмы';
 import {fetchAllTest, fetchWithAutoRetryTest} from './Асинхронность';
 import {canJumpTest, expire, isValidTest, mergeIntervalsTest, optionalChainingTest} from './Задачи';
+import {array_flat_test} from './Полифилы';
 import {flattenArrayTest} from './Рекурсия';
 
 const App = () => {
@@ -16,7 +17,10 @@ const App = () => {
 	// fetchWithAutoRetryTest();
 	// findPathTest();
 	// binarySearchRecursiveTest();
-	flattenArrayTest();
+	// flattenArrayTest();
+	// breadthSearchTest();
+
+	array_flat_test();
 
 	// ***
 	// ***
