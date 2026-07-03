@@ -28,3 +28,7 @@
 # Алгоритмы
 
 9. Бинарный поиск в отсортированном массиве [binary Search](src\Алгоритмы\бинарныйПоиск.ts)
+
+# Задачи React
+
+11. ButtonsList задача с кнопками [buttonsList](src\React\buttonsList.tsx)

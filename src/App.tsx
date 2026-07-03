@@ -1,3 +1,4 @@
+import {ButtonsList} from './React';
 import {RippleButtonsList} from './components';
 import {findPathTest} from './test';
 import {binarySearchRecursiveTest, breadthSearchTest} from './Алгоритмы';
@@ -19,8 +20,7 @@ const App = () => {
 	// binarySearchRecursiveTest();
 	// flattenArrayTest();
 	// breadthSearchTest();
-
-	array_flat_test();
+	// array_flat_test();
 
 	// ***
 	// ***
@@ -28,6 +28,7 @@ const App = () => {
 	return (
 		<>
 			<RippleButtonsList /> {/*  Кнопки с ripple-эффектом */}
+			<ButtonsList /> {/*  Задача с кнопками React */}
 		</>
 	);
 };
