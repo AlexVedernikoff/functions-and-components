@@ -20,6 +20,6 @@ export const fetchAllTest = () => {
 	console.log('*** fetchAll ***');
 
 	fetchAll(links)
-		.then(results => console.log('results = ', results))
+		.then(results => console.log('results: ', results))
 		.catch(error => console.log('Во время выполнения запроса произошла ошибка: ', error));
 };
