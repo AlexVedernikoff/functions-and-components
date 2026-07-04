@@ -1,0 +1,1 @@
+export {maxSubArrayTest} from './maxSubArray';
