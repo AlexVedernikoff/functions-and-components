@@ -1,4 +1,4 @@
-import {ButtonsList} from './React';
+import {ButtonsList, Salary} from './React';
 import {RippleButtonsList} from './components';
 import {findPathTest} from './test';
 import {binarySearchRecursiveTest, breadthSearchTest} from './Алгоритмы';
@@ -37,7 +37,8 @@ const App = () => {
 	return (
 		<>
 			{/* <RippleButtonsList />  Кнопки с ripple-эффектом */}
-			{/* <ButtonsList />  Задача с кнопками React */}
+			<ButtonsList /> {/*Задача с кнопками React */}
+			<Salary />
 		</>
 	);
 };
