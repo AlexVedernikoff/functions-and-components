@@ -1,3 +1,5 @@
+import {deepEqual} from '../../Рекурсия';
+
 /**
  * Для тестирования можно пользоваться моком функции fetchFlights
  *
@@ -55,8 +57,62 @@ export async function findPath(from: Keys, to: string, fetchFlights: fetch) {
 	return [];
 }
 
+// *** Проверка ***********************************************
+
+const samples = [
+	{
+		test: ['A', 'N', fetchFlights] as [string, string, Function],
+		expected: ['A', 'B', 'N'],
+	},
+	{
+		test: ['A', 'F', fetchFlights] as [string, string, Function],
+		expected: ['A', 'D', 'F'],
+	},
+];
+
 export async function fetchFlightsTest() {
-	// const path = await findPath('A', 'N', fetchFlights);
-	const path = await findPath('A', 'F', fetchFlights);
-	console.log('Путь = ', path);
+	testAsyncResults(findPath, samples);
 }
+
+export const testAsyncResults = async (fn: Function, samples: Array<{test: Array<any>; expected: any}>) => {
+	console.log(`Проверяем функцию %c${fn.name}`, 'color: purple');
+
+	const results = await Promise.all(
+		samples.map(async ({test, expected}) => {
+			let result;
+			try {
+				// Вызываем асинхронную функцию и ждём результат
+				result = await fn(...test);
+			} catch (error) {
+				// Если функция выбросила ошибку (или промис зареджектился),
+				// сохраняем её как результат, чтобы сравнение провалилось
+				result = error;
+			}
+
+			// Логируем вызов и результат
+			console.log(`${fn.name}(`, ...test, `) = `, result);
+			console.log('expected = ', expected);
+
+			return {
+				args: test,
+				expected,
+				result,
+				passed: deepEqual(result, expected),
+			};
+		})
+	);
+
+	// Выводим таблицу результатов
+	console.table(results);
+
+	// Итоговое сообщение
+	const allPassed = results.every(({passed}) => passed);
+	if (allPassed) {
+		console.log(`%cУспешно!\n`, 'color: green');
+	} else {
+		console.log('%cТест не пройдён ((\n', 'color: tomato');
+	}
+
+	// Возвращаем результаты на случай, если нужно их использовать дальше
+	return results;
+};
