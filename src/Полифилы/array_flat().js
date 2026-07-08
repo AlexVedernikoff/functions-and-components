@@ -13,6 +13,28 @@ Array.prototype.myFlat = function (depth = 1) {
 	return result;
 };
 
+// Альтернативный вариант
+Array.prototype.myFlat1 = function (depth = 1) {
+	let result = [...this]; // .flat() немутирующий метод, поэтому делаем копию [...this]
+	for (let d = 0; d < depth; d++) {
+		const current = [...result];
+		let multiDimension = false;
+		result = [];
+
+		for (let i = 0; i < current.length; i++) {
+			if (Array.isArray(current[i])) {
+				result.push(...current[i]);
+				multiDimension = true;
+			} else {
+				result.push(current[i]);
+			}
+		}
+
+		if (!multiDimension) break;
+	}
+	return result;
+};
+
 // *** Проверка ***********************************************
 
 const arrTwoLvl = [1, 2, [2], [4, 5], 6, 8, 7];
@@ -39,7 +61,7 @@ const samples = [
 export function array_flat_test() {
 	samples.every(({test}) => {
 		const [arr, depth] = test;
-		const [myFlatResult, flatResult] = [arr.myFlat(depth), arr.flat(depth)];
+		const [myFlatResult, flatResult] = [arr.myFlat1(depth), arr.flat(depth)];
 
 		console.log(arr, `.myFlat(`, depth, `) = `, myFlatResult);
 		console.log(arr, `.flat(`, depth, `) = `, flatResult);
