@@ -2,12 +2,11 @@ import {ButtonsList, Salary} from './React';
 import {RippleButtonsList} from './components';
 import {findPathTest} from './test';
 import {binarySearchRecursiveTest, breadthSearchTest} from './Алгоритмы';
-import {fetchAllTest, fetchWithAutoRetryTest} from './Асинхронность';
+import {bestBuyerTest, fetchAllTest, fetchWithAutoRetryTest} from './Асинхронность';
 import {canJumpTest, expire, isValidTest, maxSubArrayTest, mergeIntervalsTest, optionalChainingTest} from './Задачи';
 import {array_flat_test} from './Полифилы';
 import {flattenArrayTest} from './Рекурсия';
 import {depthFirstSearchTest} from './Алгоритмы/Графы';
-import {bestBuyerTest} from './test2';
 
 const App = () => {
 	// closure(); // Замыкания
@@ -19,14 +18,15 @@ const App = () => {
 	// optionalChainingTest();
 	// fetchWithAutoRetryTest();
 	// findPathTest();
-	binarySearchRecursiveTest();
+	// binarySearchRecursiveTest(); // Бинарный поиск в отсортированном массиве
 	// flattenArrayTest();
 
 	// array_flat_test();
 
 	// testT();
 	// test2();
-	// bestBuyerTest();
+
+	bestBuyerTest();
 
 	// maxSubArrayTest();
 	// breadthSearchTest();
