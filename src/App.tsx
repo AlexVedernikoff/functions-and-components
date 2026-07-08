@@ -7,6 +7,7 @@ import {canJumpTest, expire, isValidTest, maxSubArrayTest, mergeIntervalsTest, o
 import {array_flat_test} from './Полифилы';
 import {flattenArrayTest} from './Рекурсия';
 import {depthFirstSearchTest} from './Алгоритмы/Графы';
+import {bestBuyerTest} from './test2';
 
 const App = () => {
 	// closure(); // Замыкания
@@ -18,15 +19,16 @@ const App = () => {
 	// optionalChainingTest();
 	// fetchWithAutoRetryTest();
 	// findPathTest();
-	// binarySearchRecursiveTest();
+	binarySearchRecursiveTest();
 	// flattenArrayTest();
 
 	// array_flat_test();
 
 	// testT();
+	// test2();
+	// bestBuyerTest();
 
-	maxSubArrayTest();
-
+	// maxSubArrayTest();
 	// breadthSearchTest();
 	// depthFirstSearchTest();
 

@@ -1,12 +1,12 @@
-import { useMemo, useState } from 'react';
+import {useMemo, useState} from 'react';
 
 export const ButtonsList = () => {
 	const [labels, setLabels] = useState<number[]>([]);
 
-	const addButton = () => setLabels((labels) => [...labels, getUniqueKey()]);
+	const addButton = () => setLabels(labels => [...labels, getUniqueKey()]);
 
 	const removeButton = (indexToRemove: number) =>
-		setLabels((labels) => labels.filter((_, index) => index !== indexToRemove));
+		setLabels(labels => labels.filter((_, index) => index !== indexToRemove));
 
 	const getUniqueKey = () => (labels.length ? Math.max(...labels) + 1 : 0);
 
@@ -27,9 +27,17 @@ export const ButtonsList = () => {
 				justifyContent: 'center',
 			}}
 		>
-			<h1>Создаём массив из кнопок</h1>
+			<Typography>Создаём массив из кнопок</Typography>
 			<button onClick={addButton}>Добавить кнопку</button>
-			<div style={{ height: '23px' }}>{buttonsList}</div>
+			<div style={{height: '23px'}}>{buttonsList}</div>
 		</div>
 	);
+};
+
+interface TypographyProps {
+	children: string;
+}
+
+export const Typography = ({children}: TypographyProps) => {
+	return <h1 style={{fontFamily: 'Playfair Display', color: '#0f6c6b'}}>{children}</h1>;
 };

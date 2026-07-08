@@ -12,6 +12,25 @@ function binarySearchRecursive<T>(arr: Array<T>, target: T, start = 0, end = arr
 		: binarySearchRecursive(arr, target, start, mid - 1);
 }
 
+function binarySearchIterative<T>(arr: Array<T>, target: T) {
+	let start = 0;
+	let end = arr.length - 1;
+
+	while (start <= end) {
+		const mid = Math.floor((start + end) / 2);
+
+		if (arr[mid] === target) {
+			return mid; // Return the index
+		} else if (arr[mid] < target) {
+			start = mid + 1; // Search right half
+		} else {
+			end = mid - 1; // Search left half
+		}
+	}
+
+	return -1; // Target not found
+}
+
 const samples = [
 	{
 		test: [[1, 5, 14, 18, 22, 25, 40, 41], 22],
@@ -37,4 +56,5 @@ const samples = [
 
 export function binarySearchRecursiveTest() {
 	testResults(binarySearchRecursive, samples);
+	testResults(binarySearchIterative, samples);
 }
