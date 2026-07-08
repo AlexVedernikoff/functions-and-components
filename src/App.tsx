@@ -1,12 +1,11 @@
 import {ButtonsList, Salary} from './React';
 import {RippleButtonsList} from './components';
-import {findPathTest} from './test';
 import {binarySearchRecursiveTest, breadthSearchTest} from './Алгоритмы';
 import {bestBuyerTest, fetchAllTest, fetchWithAutoRetryTest} from './Асинхронность';
 import {canJumpTest, expire, isValidTest, maxSubArrayTest, mergeIntervalsTest, optionalChainingTest} from './Задачи';
 import {array_flat_test} from './Полифилы';
 import {flattenArrayTest} from './Рекурсия';
-import {depthFirstSearchTest} from './Алгоритмы/Графы';
+import {depthFirstSearchTest, fetchFlightsTest} from './Алгоритмы/Графы';
 
 const App = () => {
 	// closure(); // Замыкания
@@ -17,7 +16,7 @@ const App = () => {
 	// isValidTest();
 	// optionalChainingTest();
 	// fetchWithAutoRetryTest();
-	// findPathTest();
+	fetchFlightsTest(); // Поиск пути в ширину между вершинами графа (авиабилеты)
 	// binarySearchRecursiveTest(); // Бинарный поиск в отсортированном массиве
 	// flattenArrayTest();
 
@@ -26,7 +25,7 @@ const App = () => {
 	// testT();
 	// test2();
 
-	bestBuyerTest();
+	// bestBuyerTest(); // Асинхронные покупатели
 
 	// maxSubArrayTest();
 	// breadthSearchTest();
