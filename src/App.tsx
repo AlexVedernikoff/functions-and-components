@@ -1,11 +1,11 @@
 import {ButtonsList, Salary} from './React';
 import {RippleButtonsList} from './components';
-import {binarySearchRecursiveTest, breadthSearchTest} from './Алгоритмы';
+import {binarySearchRecursiveTest, breadthSearchTest, BST_Test} from './Алгоритмы';
 import {bestBuyerTest, fetchAllTest, fetchWithAutoRetryTest} from './Асинхронность';
 import {canJumpTest, expire, isValidTest, maxSubArrayTest, mergeIntervalsTest, optionalChainingTest} from './Задачи';
-import {array_flat_test} from './Полифилы';
+import {array_flat_test, myReverseTest} from './Полифилы';
 import {flattenArrayTest} from './Рекурсия';
-import {depthFirstSearchTest, fetchFlightsTest} from './Алгоритмы/Графы';
+import {depthFirstSearchTest, fetchFlightsTest, numIslandsTest} from './Алгоритмы/Графы';
 
 const App = () => {
 	// closure(); // Замыкания
@@ -16,11 +16,12 @@ const App = () => {
 	// isValidTest();
 	// optionalChainingTest();
 	// fetchWithAutoRetryTest();
-	fetchFlightsTest(); // Поиск пути в ширину между вершинами графа (авиабилеты)
+	// fetchFlightsTest(); // Поиск пути в ширину между вершинами графа (авиабилеты)
 	// binarySearchRecursiveTest(); // Бинарный поиск в отсортированном массиве
 	// flattenArrayTest();
 
 	// array_flat_test();
+	myReverseTest(); // Полифил на Array.reverse()
 
 	// testT();
 	// test2();
@@ -30,6 +31,10 @@ const App = () => {
 	// maxSubArrayTest();
 	// breadthSearchTest();
 	// depthFirstSearchTest();
+
+	// numIslandsTest();
+
+	// BST_Test(); // Бинарное дерево
 
 	// ***
 
