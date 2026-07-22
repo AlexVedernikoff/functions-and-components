@@ -84,8 +84,10 @@ class BST {
 const values = [10, 8, 16, 6, 2, 14];
 
 //        10
-//     8     16
-//   6    14
+//      /    \
+//     8      16
+//    /     /
+//   6     14
 // 2
 export function BST_Test() {
 	const tree = new BST();
@@ -103,3 +105,6 @@ export function BST_Test() {
 }
 
 // *** Теория *************************************************
+
+// Вставка add(data) узла в бинарное дерево рекурсивная:
+// https://dev.to/alexandrshy/data-structures-binary-search-tree-in-javascript-3om9
