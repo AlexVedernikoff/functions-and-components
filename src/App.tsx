@@ -4,7 +4,7 @@ import {binarySearchRecursiveTest, breadthSearchTest, BST_Test} from './Алго
 import {bestBuyerTest, fetchAllTest, fetchWithAutoRetryTest} from './Асинхронность';
 import {canJumpTest, expire, isValidTest, maxSubArrayTest, mergeIntervalsTest, optionalChainingTest} from './Задачи';
 import {array_flat_test, myReverseTest} from './Полифилы';
-import {flattenArrayTest} from './Рекурсия';
+import {flattenArrayTest, sumOfSquaresTest} from './Рекурсия';
 import {depthFirstSearchTest, fetchFlightsTest, numIslandsTest} from './Алгоритмы/Графы';
 import {menu, Menu, NestedList} from './test';
 
@@ -19,7 +19,9 @@ const App = () => {
 	// fetchWithAutoRetryTest();
 	// fetchFlightsTest(); // Поиск пути в ширину между вершинами графа (авиабилеты)
 	// binarySearchRecursiveTest(); // Бинарный поиск в отсортированном массиве
+
 	// flattenArrayTest();
+	sumOfSquaresTest();
 
 	// array_flat_test();
 	// myReverseTest(); // Полифил на Array.reverse()
