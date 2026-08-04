@@ -1,12 +1,22 @@
-import {ButtonsList, InputMask, Salary} from './React';
+import {ButtonsList, InputMask, NestedList, Salary} from './React';
 import {RippleButtonsList} from './components';
 import {binarySearchRecursiveTest, breadthSearchTest, BST_Test} from './Алгоритмы';
 import {bestBuyerTest, fetchAllTest, fetchWithAutoRetryTest} from './Асинхронность';
-import {canJumpTest, expire, isValidTest, maxSubArrayTest, mergeIntervalsTest, optionalChainingTest} from './Задачи';
-import {array_flat_test, myReverseTest} from './Полифилы';
-import {flattenArrayTest, sumOfSquaresTest} from './Рекурсия';
+import {
+	canJumpTest,
+	expire,
+	folderTest,
+	isValidTest,
+	maxSubArrayTest,
+	mergeIntervalsTest,
+	optionalChainingTest,
+	parseCSVTest,
+} from './Задачи';
+import {array_flat_test, myReverseTest, mySomeTest} from './Полифилы';
+import {flattenArrayTest, permuteTest, sumOfSquaresTest} from './Рекурсия';
 import {depthFirstSearchTest, fetchFlightsTest, numIslandsTest} from './Алгоритмы/Графы';
-import {menu, Menu, NestedList} from './test';
+import {PleaseReviewMeRev} from './React/PleaseReviewMe';
+import {PleaseReviewMeRev02} from './React/PleaseReviewMe/PleaseReviewMeRev';
 
 const App = () => {
 	// closure(); // Замыкания
@@ -21,7 +31,15 @@ const App = () => {
 	// binarySearchRecursiveTest(); // Бинарный поиск в отсортированном массиве
 
 	// flattenArrayTest();
-	sumOfSquaresTest();
+	// sumOfSquaresTest();
+
+	// mySomeTest();
+
+	// parseCSVTest();
+
+	folderTest();
+
+	// permuteTest();
 
 	// array_flat_test();
 	// myReverseTest(); // Полифил на Array.reverse()
@@ -57,10 +75,34 @@ const App = () => {
 
 	// console.log('end');
 
+	// *****************
+	// function print() {
+	// 	console.log(1);
+	// }
+
+	// async function foo() {
+	// 	console.log(2);
+
+	// 	await print();
+
+	// 	console.log(3);
+	// }
+
+	// console.log(4);
+
+	// foo();
+
+	// console.log(5);
+
+	// 4 2 1 5 3
+
 	// ***
 
 	return (
 		<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+			{/* <PleaseReviewMeOrig /> */}
+			{/* <PleaseReviewMeRev /> */}
+			<PleaseReviewMeRev02 />
 			{/* <RippleButtonsList />  Кнопки с ripple-эффектом */}
 			<ButtonsList /> {/*Задача с кнопками React */}
 			<Salary />
