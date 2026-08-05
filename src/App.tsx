@@ -15,8 +15,7 @@ import {
 import {array_flat_test, myReverseTest, mySomeTest} from './Полифилы';
 import {flattenArrayTest, permuteTest, sumOfSquaresTest} from './Рекурсия';
 import {depthFirstSearchTest, fetchFlightsTest, numIslandsTest} from './Алгоритмы/Графы';
-import {PleaseReviewMeRev} from './React/PleaseReviewMe';
-import {PleaseReviewMeRev02} from './React/PleaseReviewMe/PleaseReviewMeRev';
+import {PleaseReviewMeRev, PleaseReviewMeRev02, PleaseReviewMeRev03} from './React/PleaseReviewMe';
 
 const App = () => {
 	// closure(); // Замыкания
@@ -37,7 +36,7 @@ const App = () => {
 
 	// parseCSVTest();
 
-	folderTest();
+	// folderTest();
 
 	// permuteTest();
 
@@ -75,34 +74,11 @@ const App = () => {
 
 	// console.log('end');
 
-	// *****************
-	// function print() {
-	// 	console.log(1);
-	// }
-
-	// async function foo() {
-	// 	console.log(2);
-
-	// 	await print();
-
-	// 	console.log(3);
-	// }
-
-	// console.log(4);
-
-	// foo();
-
-	// console.log(5);
-
-	// 4 2 1 5 3
-
-	// ***
-
 	return (
 		<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 			{/* <PleaseReviewMeOrig /> */}
-			{/* <PleaseReviewMeRev /> */}
-			<PleaseReviewMeRev02 />
+			<PleaseReviewMeRev03 />
+			{/* <PleaseReviewMeRev02 /> */}
 			{/* <RippleButtonsList />  Кнопки с ripple-эффектом */}
 			<ButtonsList /> {/*Задача с кнопками React */}
 			<Salary />
