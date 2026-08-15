@@ -30,6 +30,13 @@ const App = () => {
 	// fetchFlightsTest(); // Поиск пути в ширину между вершинами графа (авиабилеты)
 	// binarySearchRecursiveTest(); // Бинарный поиск в отсортированном массиве
 
+	// *** Рекурсия ***
+	// deepCopyTest();
+	// flattenArrayTest();
+
+	// *** Бинарные деревья ***
+	treeByLevelsTest();
+
 	// sumOfSquaresTest();
 
 	// mySomeTest();
@@ -57,11 +64,6 @@ const App = () => {
 	// BST_Test(); // Бинарное дерево
 	// treeHeightTest();
 	// pathFinderTest();
-	// treeByLevelsTest();
-
-	// *** Рекурсия ***
-	// deepCopyTest();
-	// flattenArrayTest();
 
 	// ***
 	// ***
