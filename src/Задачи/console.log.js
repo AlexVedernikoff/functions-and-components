@@ -88,3 +88,25 @@ console.log(5);
 // 4 2 1 5 3
 
 // ************************************************************
+// *** Задача 4 ***********************************************
+console.log('start');
+
+// код создания промиса выполняется синхронно!
+const promise1 = new Promise((resolve, reject) => {
+	console.log(1);
+	// resolve(2);
+	reject(2); // resolve() и reject() не прерывают выполнение промиса!
+	console.log(3);
+});
+
+promise1
+	.then(res => {
+		console.log(res);
+	})
+	.catch(err => {
+		console.log(err);
+	});
+
+console.log('end');
+
+// start 1 3 end 2

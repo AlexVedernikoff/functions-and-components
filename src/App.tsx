@@ -1,6 +1,6 @@
 import {ButtonsList, InputMask, NestedList, Salary} from './React';
 import {RippleButtonsList} from './components';
-import {binarySearchRecursiveTest, breadthSearchTest, BST_Test} from './Алгоритмы';
+import {binarySearchRecursiveTest, breadthSearchTest, BST_Test, treeByLevelsTest} from './Алгоритмы';
 import {bestBuyerTest, fetchAllTest, fetchWithAutoRetryTest} from './Асинхронность';
 import {
 	canJumpTest,
@@ -13,9 +13,10 @@ import {
 	parseCSVTest,
 } from './Задачи';
 import {array_flat_test, myReverseTest, mySomeTest} from './Полифилы';
-import {flattenArrayTest, permuteTest, sumOfSquaresTest} from './Рекурсия';
-import {depthFirstSearchTest, fetchFlightsTest, numIslandsTest} from './Алгоритмы/Графы';
+import {deepCopyTest, flattenArrayTest, permuteTest, sumOfSquaresTest} from './Рекурсия';
+import {depthFirstSearchTest, fetchFlightsTest, numIslandsTest, pathFinderTest} from './Алгоритмы/Графы';
 import {PleaseReviewMeRev, PleaseReviewMeRev02, PleaseReviewMeRev03} from './React/PleaseReviewMe';
+import {treeHeightTest} from './Алгоритмы/Двоичные деревья';
 
 const App = () => {
 	// closure(); // Замыкания
@@ -29,7 +30,6 @@ const App = () => {
 	// fetchFlightsTest(); // Поиск пути в ширину между вершинами графа (авиабилеты)
 	// binarySearchRecursiveTest(); // Бинарный поиск в отсортированном массиве
 
-	// flattenArrayTest();
 	// sumOfSquaresTest();
 
 	// mySomeTest();
@@ -55,24 +55,16 @@ const App = () => {
 	// numIslandsTest();
 
 	// BST_Test(); // Бинарное дерево
+	// treeHeightTest();
+	// pathFinderTest();
+	// treeByLevelsTest();
+
+	// *** Рекурсия ***
+	// deepCopyTest();
+	// flattenArrayTest();
 
 	// ***
-	// console.log('start');
-
-	// const promise1 = new Promise((resolve, reject) => {
-	// 	console.log(1);
-	// 	// resolve(2);
-	// 	reject(2);
-	// 	console.log(3);
-	// });
-
-	// promise1
-	// 	.then(res => {
-	// 		console.log(res);
-	// 	})
-	// 	.catch(err => console.log(err));
-
-	// console.log('end');
+	// ***
 
 	return (
 		<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
