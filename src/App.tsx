@@ -16,7 +16,7 @@ import {array_flat_test, myReverseTest, mySomeTest} from './Полифилы';
 import {deepCopyTest, flattenArrayTest, permuteTest, sumOfSquaresTest} from './Рекурсия';
 import {depthFirstSearchTest, fetchFlightsTest, numIslandsTest, pathFinderTest} from './Алгоритмы/Графы';
 import {PleaseReviewMeRev, PleaseReviewMeRev02, PleaseReviewMeRev03} from './React/PleaseReviewMe';
-import {treeHeightTest} from './Алгоритмы/Двоичные деревья';
+import {rangeSumBSTTest, treeHeightTest} from './Алгоритмы/Двоичные деревья';
 
 const App = () => {
 	// closure(); // Замыкания
@@ -35,7 +35,8 @@ const App = () => {
 	// flattenArrayTest();
 
 	// *** Бинарные деревья ***
-	treeByLevelsTest();
+	// treeByLevelsTest();
+	rangeSumBSTTest();
 
 	// sumOfSquaresTest();
 
