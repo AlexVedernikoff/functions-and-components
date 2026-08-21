@@ -36,7 +36,11 @@ const App = () => {
 
 	// *** Бинарные деревья ***
 	// treeByLevelsTest();
-	rangeSumBSTTest();
+	// rangeSumBSTTest();
+	treeHeightTest();
+
+	// *** Обход графа ***
+	// numIslandsTest();
 
 	// sumOfSquaresTest();
 
@@ -60,10 +64,8 @@ const App = () => {
 	// breadthSearchTest();
 	// depthFirstSearchTest();
 
-	// numIslandsTest();
-
 	// BST_Test(); // Бинарное дерево
-	// treeHeightTest();
+
 	// pathFinderTest();
 
 	// ***
