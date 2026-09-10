@@ -1,4 +1,4 @@
-import {ButtonsList, InputMask, NestedList, Salary} from './React';
+import {ButtonsList, NestedList, Salary, PleaseReviewMeRev} from './React';
 import {RippleButtonsList} from './components';
 import {binarySearchRecursiveTest, breadthSearchTest, BST_Test, treeByLevelsTest} from './Алгоритмы';
 import {bestBuyerTest, fetchAllTest, fetchWithAutoRetryTest} from './Асинхронность';
@@ -15,7 +15,6 @@ import {
 import {array_flat_test, myReverseTest, mySomeTest} from './Полифилы';
 import {deepCopyTest, flattenArrayTest, permuteTest, sumOfSquaresTest} from './Рекурсия';
 import {depthFirstSearchTest, fetchFlightsTest, numIslandsTest, pathFinderTest} from './Алгоритмы/Графы';
-import {PleaseReviewMeRev, PleaseReviewMeRev02, PleaseReviewMeRev03} from './React/PleaseReviewMe';
 import {rangeSumBSTTest, treeHeightTest} from './Алгоритмы/Двоичные деревья';
 
 const App = () => {
@@ -73,9 +72,7 @@ const App = () => {
 
 	return (
 		<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-			{/* <PleaseReviewMeOrig /> */}
-			<PleaseReviewMeRev03 />
-			{/* <PleaseReviewMeRev02 /> */}
+			<PleaseReviewMeRev />
 			{/* <RippleButtonsList />  Кнопки с ripple-эффектом */}
 			<ButtonsList /> {/*Задача с кнопками React */}
 			<Salary />
