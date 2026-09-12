@@ -1,4 +1,4 @@
-import {ButtonsList, NestedList, Salary, PleaseReviewMeRev} from './React';
+import {ButtonsList, NestedList, Salary, PleaseReviewMeRev, TempButtonsList} from './React';
 import {RippleButtonsList} from './components';
 import {binarySearchRecursiveTest, breadthSearchTest, BST_Test, treeByLevelsTest} from './Алгоритмы';
 import {bestBuyerTest, fetchAllTest, fetchWithAutoRetryTest} from './Асинхронность';
@@ -72,12 +72,12 @@ const App = () => {
 
 	return (
 		<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+			<TempButtonsList />
 			<PleaseReviewMeRev />
 			{/* <RippleButtonsList />  Кнопки с ripple-эффектом */}
 			<ButtonsList /> {/*Задача с кнопками React */}
 			<Salary />
 			<NestedList />
-			{/* <InputMask mask="Q______Q___" /> */}
 		</div>
 	);
 };
