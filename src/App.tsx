@@ -1,4 +1,4 @@
-import {ButtonsList, NestedList, Salary, PleaseReviewMeRev, TempButtonsList} from './React';
+import {ButtonsList, NestedList, Salary, PleaseReviewMeRev, TempButtonsList, SalaryTemp} from './React';
 import {RippleButtonsList} from './components';
 import {binarySearchRecursiveTest, breadthSearchTest, BST_Test, treeByLevelsTest} from './Алгоритмы';
 import {bestBuyerTest, fetchAllTest, fetchWithAutoRetryTest} from './Асинхронность';
@@ -36,7 +36,7 @@ const App = () => {
 	// *** Бинарные деревья ***
 	// treeByLevelsTest();
 	// rangeSumBSTTest();
-	treeHeightTest();
+	// treeHeightTest();
 
 	// *** Обход графа ***
 	// numIslandsTest();
@@ -72,7 +72,8 @@ const App = () => {
 
 	return (
 		<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-			<TempButtonsList />
+			<SalaryTemp />
+			{/* <TempButtonsList /> */}
 			<PleaseReviewMeRev />
 			{/* <RippleButtonsList />  Кнопки с ripple-эффектом */}
 			<ButtonsList /> {/*Задача с кнопками React */}
