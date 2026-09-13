@@ -16,6 +16,8 @@ import {array_flat_test, myReverseTest, mySomeTest} from './Полифилы';
 import {deepCopyTest, flattenArrayTest, permuteTest, sumOfSquaresTest} from './Рекурсия';
 import {depthFirstSearchTest, fetchFlightsTest, numIslandsTest, pathFinderTest} from './Алгоритмы/Графы';
 import {rangeSumBSTTest, treeHeightTest} from './Алгоритмы/Двоичные деревья';
+import {EnjoyPro} from './Собеседования';
+import {myFlatTest} from './Полифилы/array_flat()_recursive';
 
 const App = () => {
 	// closure(); // Замыкания
@@ -53,6 +55,7 @@ const App = () => {
 
 	// array_flat_test();
 	// myReverseTest(); // Полифил на Array.reverse()
+	myFlatTest();
 
 	// testT();
 	// test2();
@@ -68,10 +71,15 @@ const App = () => {
 	// pathFinderTest();
 
 	// ***
+
 	// ***
+
+	// array_flat_test_123();
 
 	return (
 		<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+			{/* *** Собеседования ***  */}
+			{/* <EnjoyPro /> */}
 			<SalaryTemp />
 			{/* <TempButtonsList /> */}
 			<PleaseReviewMeRev />
