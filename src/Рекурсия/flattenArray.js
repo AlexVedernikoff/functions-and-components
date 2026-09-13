@@ -3,14 +3,13 @@ import {testResults} from '../utils';
 // *** Функция, которая возвращает плоский массив из многомерного ***
 
 function flattenArray(arr) {
-	const result = arr.reduce((acc, el) => {
+	return arr.reduce((acc, el) => {
 		if (!Array.isArray(el)) {
 			return acc.concat(el);
 		} else {
 			return acc.concat(flattenArray(el));
 		}
 	}, []);
-	return result;
 }
 
 /*************************************************************/
