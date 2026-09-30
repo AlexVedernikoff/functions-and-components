@@ -3,3 +3,5 @@ export {Salary} from './salary';
 export {NestedList} from './NestedList';
 export {PleaseReviewMeRev} from './PleaseReviewMe';
 export * from './Temp';
+export {ToDoList} from './ToDoList';
+export {Rumicon} from './Rumicon';

@@ -1,4 +1,13 @@
-import {ButtonsList, NestedList, Salary, PleaseReviewMeRev, TempButtonsList, SalaryTemp} from './React';
+import {
+	ButtonsList,
+	NestedList,
+	Salary,
+	PleaseReviewMeRev,
+	TempButtonsList,
+	SalaryTemp,
+	ToDoList,
+	Rumicon,
+} from './React';
 import {RippleButtonsList} from './components';
 import {binarySearchRecursiveTest, breadthSearchTest, BST_Test, treeByLevelsTest} from './Алгоритмы';
 import {bestBuyerTest, fetchAllTest, fetchWithAutoRetryTest} from './Асинхронность';
@@ -16,8 +25,9 @@ import {array_flat_test, myReverseTest, mySomeTest} from './Полифилы';
 import {deepCopyTest, flattenArrayTest, permuteTest, sumOfSquaresTest} from './Рекурсия';
 import {depthFirstSearchTest, fetchFlightsTest, numIslandsTest, pathFinderTest} from './Алгоритмы/Графы';
 import {rangeSumBSTTest, treeHeightTest} from './Алгоритмы/Двоичные деревья';
-import {EnjoyPro} from './Собеседования';
+import {EnjoyPro, GazIs} from './Собеседования';
 import {myFlatTest} from './Полифилы/array_flat()_recursive';
+import {ChangeEvent, useState} from 'react';
 
 const App = () => {
 	// closure(); // Замыкания
@@ -55,7 +65,7 @@ const App = () => {
 
 	// array_flat_test();
 	// myReverseTest(); // Полифил на Array.reverse()
-	myFlatTest();
+	// myFlatTest();
 
 	// testT();
 	// test2();
@@ -78,15 +88,18 @@ const App = () => {
 
 	return (
 		<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+			<Rumicon />
+			{/* <GazIs /> */}
 			{/* *** Собеседования ***  */}
 			{/* <EnjoyPro /> */}
-			<SalaryTemp />
+			{/* <ToDoList /> */}
+			{/* <SalaryTemp /> */}
 			{/* <TempButtonsList /> */}
-			<PleaseReviewMeRev />
+			{/* <PleaseReviewMeRev /> */}
 			{/* <RippleButtonsList />  Кнопки с ripple-эффектом */}
-			<ButtonsList /> {/*Задача с кнопками React */}
-			<Salary />
-			<NestedList />
+			{/* <ButtonsList /> Задача с кнопками React */}
+			{/* <Salary /> */}
+			{/* <NestedList /> */}
 		</div>
 	);
 };
