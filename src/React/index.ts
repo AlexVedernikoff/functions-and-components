@@ -5,3 +5,4 @@ export {PleaseReviewMeRev} from './PleaseReviewMe';
 export * from './Temp';
 export {ToDoList} from './ToDoList';
 export {Rumicon} from './Rumicon';
+export {Test} from './Test';

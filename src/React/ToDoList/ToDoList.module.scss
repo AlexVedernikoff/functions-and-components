@@ -1,0 +1,21 @@
+.list {
+	list-style: none; /* Убирает маркеры */
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.listItem {
+	display: flex;
+	gap: 16px;
+	width: 250px;
+	justify-content: space-between;
+}
+
+.strikethrough {
+	text-decoration: line-through;
+}
+
+.buttonRemove {
+	color: red;
+}

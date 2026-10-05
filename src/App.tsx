@@ -7,6 +7,7 @@ import {
 	SalaryTemp,
 	ToDoList,
 	Rumicon,
+	Test,
 } from './React';
 import {RippleButtonsList} from './components';
 import {binarySearchRecursiveTest, breadthSearchTest, BST_Test, treeByLevelsTest} from './Алгоритмы';
@@ -88,7 +89,8 @@ const App = () => {
 
 	return (
 		<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-			<Rumicon />
+			<Test />
+			{/* <Rumicon /> */}
 			{/* <GazIs /> */}
 			{/* *** Собеседования ***  */}
 			{/* <EnjoyPro /> */}
