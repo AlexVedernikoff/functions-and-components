@@ -6,25 +6,26 @@ function folder(list: string[]): void {
 
 	list
 		.sort((a, b) => a.localeCompare(b))
-		.map(path => path.split('/'))
-		.map((paths, pathIndex, pathsList) =>
+		.map(path => path.split('/').slice(1))
+		.map((paths, pathIndex, pathsList) => {
+			let logValue = false;
 			paths.map((el, elIndex) => {
-				if (!pathsList[pathIndex - 1] || pathsList[pathIndex - 1][elIndex] !== el) {
-					log(el, elIndex);
-				}
-			})
-		);
+				if ((pathsList[pathIndex - 1] || [])[elIndex] !== el) logValue = true;
+				logValue && log(el, elIndex);
+			});
+		});
 }
 
 // Работает за O(n·m) времени и O(n·m) памяти (n – число путей, m – средняя длина).
 
 const list = [
-	'tmp/error.log',
-	'root/html/css/style.css',
-	'root/html/file/a.html',
-	'root/html/file/b.html',
-	'root/html/image/logo.ipg',
-	'root/html/script/bundle.js',
+	'/tmp/error.log',
+	'/root/html/file/a.html',
+	'/root/html/css/style.css',
+	'/root/html/image/logo.jpg',
+	'/root/html/file/b.html',
+	'/root/html/script/bundle.js',
+	'/root/scss/script/bundle.js',
 ];
 
 export const folderTest = () => {
@@ -60,24 +61,3 @@ export const folderTest = () => {
 // 	['root', 'html', 'script', 'bundle.js'],
 // 	['tmp', 'error.log'],
 // ];
-
-function folderOld(list: string[]): void {
-	const modified = list
-		.sort((a, b) => a.localeCompare(b))
-		.map(path => path.split('/'))
-		.map((paths, pathIndex, pathsList) =>
-			paths.map((el, elIndex) =>
-				pathsList[pathIndex - 1] && pathsList[pathIndex - 1][elIndex] === el ? '--' : elIndex ? el : `-${el}`
-			)
-		);
-
-	console.log('modified = ', modified);
-	console.log('');
-
-	const printResult = (path: string[]) =>
-		path.forEach((el, index) => {
-			if (el !== '--') console.log(`${'--'.repeat(index)}${el}`);
-		});
-
-	modified.forEach(list => printResult(list));
-}

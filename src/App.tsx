@@ -61,7 +61,7 @@ const App = () => {
 
 	// parseCSVTest();
 
-	// folderTest();
+	folderTest();
 
 	// permuteTest();
 
@@ -90,7 +90,7 @@ const App = () => {
 
 	return (
 		<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-			<Hook />
+			{/* <Hook /> */}
 			{/* <Test /> */}
 			{/* <Rumicon /> */}
 			{/* <GazIs /> */}
