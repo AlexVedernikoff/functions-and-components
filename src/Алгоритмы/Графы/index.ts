@@ -3,3 +3,4 @@ export {depthFirstSearchTest} from './depthFirstSearsh';
 export {fetchFlightsTest} from './fetchFlights';
 export {numIslandsTest} from './numberOfIslands';
 export {pathFinderTest} from './pathFinder';
+export {breadthSearch} from './breadthSearch';

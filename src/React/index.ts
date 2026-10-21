@@ -7,3 +7,4 @@ export {ToDoList} from './ToDoList';
 export {Rumicon} from './Rumicon';
 export {Test} from './Test';
 export {Hook} from './Hook';
+export {StreamReader} from './StreamReader';

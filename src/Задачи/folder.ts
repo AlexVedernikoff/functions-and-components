@@ -7,9 +7,9 @@ function folder(list: string[]): void {
 	list
 		.sort((a, b) => a.localeCompare(b))
 		.map(path => path.split('/').slice(1))
-		.map((paths, pathIndex, pathsList) => {
+		.forEach((paths, pathIndex, pathsList) => {
 			let logValue = false;
-			paths.map((el, elIndex) => {
+			paths.forEach((el, elIndex) => {
 				if ((pathsList[pathIndex - 1] || [])[elIndex] !== el) logValue = true;
 				logValue && log(el, elIndex);
 			});
